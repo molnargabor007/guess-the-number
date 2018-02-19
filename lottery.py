@@ -38,11 +38,11 @@ def main():
     print(winnig_numbers)
     match = set(your_bet).intersection(set(winnig_numbers))
     if len(match) == numbers:
-        print list(match) + "JACKPOT!! YOU WIN AMAZING!!!"
+        print str(list(match)) + " JACKPOT!! YOU WIN AMAZING!!!"
     elif len(match) == 0:
         print "Sorry, you don't have any hit, better luck next time!"
     else:
-        print "Congratulations you hit " + str(len(match)) + " " + list(match)
+        print "Congratulations you hit " + str(len(match)) + " of " + str(numbers) + " :" + str(list(match))
 
 if __name__ == "__main__":
     main()
